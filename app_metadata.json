@@ -1,0 +1,599 @@
+{
+  "appgroup_id": "68b73d29ca43b9d4263cab1c",
+  "appgroup_name": "BPro - Beschlu\u00dfprotokoll",
+  "apps": {
+    "bpro___beteiligte": {
+      "app_id": "66d5c047fbcc2c0f7d2728cf",
+      "name": "BPro - Beteiligte",
+      "controls": {
+        "mitarbeiter": {
+          "identifier": "mitarbeiter",
+          "label": "Mitarbeiter",
+          "type": "applookup",
+          "subtype": "select",
+          "fulltype": "applookup/select",
+          "lookup_app": "https://my.living-apps.de/rest/apps/66d5854721398e70e4b91640"
+        },
+        "beschlussprotokoll": {
+          "identifier": "beschlussprotokoll",
+          "label": "Beschlussprotokoll",
+          "type": "applookup",
+          "subtype": "select",
+          "fulltype": "applookup/select",
+          "lookup_app": "https://my.living-apps.de/rest/apps/66d585474669a57f9e3d6197"
+        },
+        "typ": {
+          "identifier": "typ",
+          "label": "Typ",
+          "type": "lookup",
+          "subtype": "select",
+          "fulltype": "lookup/select",
+          "lookup_data": {
+            "kenntnisnahme": "Kenntnisnahme",
+            "zustimmung": "Zustimmung"
+          }
+        },
+        "erledigt": {
+          "identifier": "erledigt",
+          "label": "erledigt",
+          "type": "bool",
+          "subtype": null,
+          "fulltype": "bool"
+        }
+      }
+    },
+    "bpro___aufgaben": {
+      "app_id": "66d585471f439cf065e31328",
+      "name": "BPro - Aufgaben",
+      "controls": {
+        "erinnerung_versendet": {
+          "identifier": "erinnerung_versendet",
+          "label": "Erinnerung versendet",
+          "type": "bool",
+          "subtype": null,
+          "fulltype": "bool"
+        },
+        "beschreibung": {
+          "identifier": "beschreibung",
+          "label": "Beschreibung",
+          "type": "string",
+          "subtype": "textarea",
+          "fulltype": "string/textarea"
+        },
+        "erledigt": {
+          "identifier": "erledigt",
+          "label": "Erledigt",
+          "type": "bool",
+          "subtype": null,
+          "fulltype": "bool"
+        },
+        "bearbeiter": {
+          "identifier": "bearbeiter",
+          "label": "Bearbeiter",
+          "type": "multipleapplookup",
+          "subtype": "select",
+          "fulltype": "multipleapplookup/select",
+          "lookup_app": "https://my.living-apps.de/rest/apps/66d5854721398e70e4b91640"
+        },
+        "faellig": {
+          "identifier": "faellig",
+          "label": "F\u00e4llig",
+          "type": "date",
+          "subtype": "datetimeminute",
+          "fulltype": "date/datetimeminute"
+        },
+        "datei_bild_12": {
+          "identifier": "datei_bild_12",
+          "label": "Datei 1",
+          "type": "file",
+          "subtype": null,
+          "fulltype": "file"
+        },
+        "datei_bild_22": {
+          "identifier": "datei_bild_22",
+          "label": "Datei 2",
+          "type": "file",
+          "subtype": null,
+          "fulltype": "file"
+        },
+        "datei_bild_32": {
+          "identifier": "datei_bild_32",
+          "label": "Datei 3",
+          "type": "file",
+          "subtype": null,
+          "fulltype": "file"
+        },
+        "kunden_interaktion": {
+          "identifier": "kunden_interaktion",
+          "label": "Kunden-Interaktion",
+          "type": "applookup",
+          "subtype": "select",
+          "fulltype": "applookup/select",
+          "lookup_app": "https://my.living-apps.de/rest/apps/66d585474669a57f9e3d6197"
+        }
+      }
+    },
+    "bpro___mitarbeiter": {
+      "app_id": "66d5854721398e70e4b91640",
+      "name": "BPro - Mitarbeiter",
+      "controls": {
+        "name": {
+          "identifier": "name",
+          "label": "Name",
+          "type": "string",
+          "subtype": "text",
+          "fulltype": "string/text"
+        },
+        "funktion": {
+          "identifier": "funktion",
+          "label": "Funktion",
+          "type": "string",
+          "subtype": "text",
+          "fulltype": "string/text"
+        },
+        "e_mail": {
+          "identifier": "e_mail",
+          "label": "E-Mail",
+          "type": "string",
+          "subtype": "email",
+          "fulltype": "string/email"
+        },
+        "bereich": {
+          "identifier": "bereich",
+          "label": "Bereich",
+          "type": "string",
+          "subtype": "text",
+          "fulltype": "string/text"
+        }
+      }
+    },
+    "bpro___beschlussprotokoll": {
+      "app_id": "66d585474669a57f9e3d6197",
+      "name": "BPro - Beschlussprotokoll",
+      "controls": {
+        "letzte_erinnerung": {
+          "identifier": "letzte_erinnerung",
+          "label": "letzte Erinnerung",
+          "type": "date",
+          "subtype": "date",
+          "fulltype": "date/date"
+        },
+        "ort": {
+          "identifier": "ort",
+          "label": "Ort",
+          "type": "geo",
+          "subtype": null,
+          "fulltype": "geo"
+        },
+        "bild_1": {
+          "identifier": "bild_1",
+          "label": "Bild",
+          "type": "file",
+          "subtype": null,
+          "fulltype": "file"
+        },
+        "text_1": {
+          "identifier": "text_1",
+          "label": "Notiz",
+          "type": "string",
+          "subtype": "textarea",
+          "fulltype": "string/textarea"
+        },
+        "erinnerung_versendet": {
+          "identifier": "erinnerung_versendet",
+          "label": "Erinnerung versendet",
+          "type": "bool",
+          "subtype": null,
+          "fulltype": "bool"
+        },
+        "status": {
+          "identifier": "status",
+          "label": "Status",
+          "type": "lookup",
+          "subtype": "select",
+          "fulltype": "lookup/select",
+          "lookup_data": {
+            "in_planung": "vorbereitung",
+            "aktuell": "offen",
+            "abgeschlossen_archiv": "abgeschlossen",
+            "archiv": "archiviert"
+          }
+        },
+        "erinnerung": {
+          "identifier": "erinnerung",
+          "label": "Erinnerung",
+          "type": "date",
+          "subtype": "datetimeminute",
+          "fulltype": "date/datetimeminute"
+        },
+        "zweck2": {
+          "identifier": "zweck2",
+          "label": "Zweck",
+          "type": "string",
+          "subtype": "text",
+          "fulltype": "string/text"
+        },
+        "mitarbeiter": {
+          "identifier": "mitarbeiter",
+          "label": "Bearbeiter",
+          "type": "multipleapplookup",
+          "subtype": "select",
+          "fulltype": "multipleapplookup/select",
+          "lookup_app": "https://my.living-apps.de/rest/apps/66d5854721398e70e4b91640"
+        },
+        "datum": {
+          "identifier": "datum",
+          "label": "Datum",
+          "type": "date",
+          "subtype": "datetimeminute",
+          "fulltype": "date/datetimeminute"
+        }
+      }
+    },
+    "bpro___howto": {
+      "app_id": "66d5dafdf1988425a91b6510",
+      "name": "BPro - Howto",
+      "controls": {
+        "beschriftung": {
+          "identifier": "beschriftung",
+          "label": "Beschriftung",
+          "type": "string",
+          "subtype": "text",
+          "fulltype": "string/text"
+        },
+        "text_farbe_dunkel": {
+          "identifier": "text_farbe_dunkel",
+          "label": "Text-Farbe dunkel",
+          "type": "string",
+          "subtype": "text",
+          "fulltype": "string/text"
+        },
+        "hintergrund_farbe_1_dunkel": {
+          "identifier": "hintergrund_farbe_1_dunkel",
+          "label": "Hintergrund-Farbe 1 dunkel",
+          "type": "string",
+          "subtype": "text",
+          "fulltype": "string/text"
+        },
+        "hintergrund_farbe_2_dunkel": {
+          "identifier": "hintergrund_farbe_2_dunkel",
+          "label": "Hintergrund-Farbe 2 dunkel",
+          "type": "string",
+          "subtype": "text",
+          "fulltype": "string/text"
+        },
+        "hintergrund_bild_dunkel2": {
+          "identifier": "hintergrund_bild_dunkel2",
+          "label": "Hintergrund-Bild dunkel",
+          "type": "file",
+          "subtype": null,
+          "fulltype": "file"
+        },
+        "breite_mobil": {
+          "identifier": "breite_mobil",
+          "label": "Breite (Mobil)",
+          "type": "number",
+          "subtype": null,
+          "fulltype": "number",
+          "precision": 0
+        },
+        "hoehe_mobil": {
+          "identifier": "hoehe_mobil",
+          "label": "H\u00f6he (Mobil)",
+          "type": "number",
+          "subtype": null,
+          "fulltype": "number",
+          "precision": 0
+        },
+        "spalte_mobil": {
+          "identifier": "spalte_mobil",
+          "label": "Spalte (Mobil)",
+          "type": "number",
+          "subtype": null,
+          "fulltype": "number",
+          "precision": 0
+        },
+        "breite_tablet2": {
+          "identifier": "breite_tablet2",
+          "label": "Breite (Tablet)",
+          "type": "number",
+          "subtype": null,
+          "fulltype": "number",
+          "precision": 0
+        },
+        "hoehe_tablet2": {
+          "identifier": "hoehe_tablet2",
+          "label": "H\u00f6he (Tablet)",
+          "type": "number",
+          "subtype": null,
+          "fulltype": "number",
+          "precision": 0
+        },
+        "spalte_tablet2": {
+          "identifier": "spalte_tablet2",
+          "label": "Spalte (Tablet)",
+          "type": "number",
+          "subtype": null,
+          "fulltype": "number",
+          "precision": 0
+        },
+        "breite_desktop2": {
+          "identifier": "breite_desktop2",
+          "label": "Breite (Desktop)",
+          "type": "number",
+          "subtype": null,
+          "fulltype": "number",
+          "precision": 0
+        },
+        "hoehe_desktop2": {
+          "identifier": "hoehe_desktop2",
+          "label": "H\u00f6he (Desktop)",
+          "type": "number",
+          "subtype": null,
+          "fulltype": "number",
+          "precision": 0
+        },
+        "spalte_desktop2": {
+          "identifier": "spalte_desktop2",
+          "label": "Spalte (Desktop)",
+          "type": "number",
+          "subtype": null,
+          "fulltype": "number",
+          "precision": 0
+        },
+        "breite_widescreen2": {
+          "identifier": "breite_widescreen2",
+          "label": "Breite (Widescreen)",
+          "type": "number",
+          "subtype": null,
+          "fulltype": "number",
+          "precision": 0
+        },
+        "hoehe_widescreen2": {
+          "identifier": "hoehe_widescreen2",
+          "label": "H\u00f6he (Widescreen)",
+          "type": "number",
+          "subtype": null,
+          "fulltype": "number",
+          "precision": 0
+        },
+        "spalte_widescreen2": {
+          "identifier": "spalte_widescreen2",
+          "label": "Spalte (Widescreen)",
+          "type": "number",
+          "subtype": null,
+          "fulltype": "number",
+          "precision": 0
+        },
+        "breite_fullhd": {
+          "identifier": "breite_fullhd",
+          "label": "Breite (FullHD)",
+          "type": "number",
+          "subtype": null,
+          "fulltype": "number",
+          "precision": 0
+        },
+        "hoehe_fullhd2": {
+          "identifier": "hoehe_fullhd2",
+          "label": "H\u00f6he (FullHD)",
+          "type": "number",
+          "subtype": null,
+          "fulltype": "number",
+          "precision": 0
+        },
+        "spalte_fullhd2": {
+          "identifier": "spalte_fullhd2",
+          "label": "Spalte (FullHD)",
+          "type": "number",
+          "subtype": null,
+          "fulltype": "number",
+          "precision": 0
+        },
+        "icon": {
+          "identifier": "icon",
+          "label": "Icon",
+          "type": "string",
+          "subtype": "text",
+          "fulltype": "string/text"
+        },
+        "beschreibung": {
+          "identifier": "beschreibung",
+          "label": "Beschreibung",
+          "type": "string",
+          "subtype": "textarea",
+          "fulltype": "string/textarea"
+        },
+        "title": {
+          "identifier": "title",
+          "label": "Title",
+          "type": "string",
+          "subtype": "text",
+          "fulltype": "string/text"
+        },
+        "parameter_ist_pflichtfeld": {
+          "identifier": "parameter_ist_pflichtfeld",
+          "label": "Parameter ist Pflichtfeld",
+          "type": "bool",
+          "subtype": null,
+          "fulltype": "bool"
+        },
+        "parameter_identifizierer": {
+          "identifier": "parameter_identifizierer",
+          "label": "Parameter-Identifizierer",
+          "type": "string",
+          "subtype": "text",
+          "fulltype": "string/text"
+        },
+        "target": {
+          "identifier": "target",
+          "label": "Target",
+          "type": "string",
+          "subtype": "text",
+          "fulltype": "string/text"
+        },
+        "css_class": {
+          "identifier": "css_class",
+          "label": "CSS-Class",
+          "type": "string",
+          "subtype": "text",
+          "fulltype": "string/text"
+        },
+        "url": {
+          "identifier": "url",
+          "label": "URL",
+          "type": "string",
+          "subtype": "url",
+          "fulltype": "string/url"
+        },
+        "reihenfolge": {
+          "identifier": "reihenfolge",
+          "label": "Reihenfolge",
+          "type": "number",
+          "subtype": null,
+          "fulltype": "number",
+          "precision": 0
+        },
+        "hintergrund": {
+          "identifier": "hintergrund",
+          "label": "Hintergrund",
+          "type": "lookup",
+          "subtype": "select",
+          "fulltype": "lookup/select",
+          "lookup_data": {
+            "einfache_farbe": "Einfache Farbe",
+            "linearer_farbverlauf": "Linearer Farbverlauf",
+            "kreisfoermiger_farbverlauf": "Kreisf\u00f6rmiger Farbverlauf",
+            "bild": "Bild"
+          }
+        },
+        "text_farbe": {
+          "identifier": "text_farbe",
+          "label": "Text-Farbe hell",
+          "type": "string",
+          "subtype": "text",
+          "fulltype": "string/text"
+        },
+        "hintergrund_farbe_1": {
+          "identifier": "hintergrund_farbe_1",
+          "label": "Hintergrund-Farbe 1 hell",
+          "type": "string",
+          "subtype": "text",
+          "fulltype": "string/text"
+        },
+        "hintergrund_farbe_2": {
+          "identifier": "hintergrund_farbe_2",
+          "label": "Hintergrund-Farbe 2 hell",
+          "type": "string",
+          "subtype": "text",
+          "fulltype": "string/text"
+        },
+        "hintergrund_bild": {
+          "identifier": "hintergrund_bild",
+          "label": "Hintergrund-Bild hell",
+          "type": "file",
+          "subtype": null,
+          "fulltype": "file"
+        },
+        "darstellung": {
+          "identifier": "darstellung",
+          "label": "Darstellung",
+          "type": "lookup",
+          "subtype": "select",
+          "fulltype": "lookup/select",
+          "lookup_data": {
+            "titel": "Titel",
+            "karte": "Karte"
+          }
+        },
+        "uebergeordnetes_panel": {
+          "identifier": "uebergeordnetes_panel",
+          "label": "\u00dcbergeordnetes Panel",
+          "type": "applookup",
+          "subtype": "select",
+          "fulltype": "applookup/select",
+          "lookup_app": "https://my.living-apps.de/rest/apps/66d5dafdf1988425a91b6510"
+        }
+      }
+    },
+    "bpro___berichte": {
+      "app_id": "66d5854790409f2f0017c0f1",
+      "name": "BPro - Berichte",
+      "controls": {
+        "datum": {
+          "identifier": "datum",
+          "label": "Datum",
+          "type": "date",
+          "subtype": "datetimeminute",
+          "fulltype": "date/datetimeminute"
+        },
+        "notiz": {
+          "identifier": "notiz",
+          "label": "Notiz",
+          "type": "string",
+          "subtype": "textarea",
+          "fulltype": "string/textarea"
+        },
+        "datei_bild_1": {
+          "identifier": "datei_bild_1",
+          "label": "Datei 1",
+          "type": "file",
+          "subtype": null,
+          "fulltype": "file"
+        },
+        "datei_bild_3": {
+          "identifier": "datei_bild_3",
+          "label": "Datei 3",
+          "type": "file",
+          "subtype": null,
+          "fulltype": "file"
+        },
+        "autor": {
+          "identifier": "autor",
+          "label": "Autor",
+          "type": "string",
+          "subtype": "text",
+          "fulltype": "string/text"
+        },
+        "kd_interaktion": {
+          "identifier": "kd_interaktion",
+          "label": "Kunden-Interaktion",
+          "type": "applookup",
+          "subtype": "select",
+          "fulltype": "applookup/select",
+          "lookup_app": "https://my.living-apps.de/rest/apps/66d585474669a57f9e3d6197"
+        },
+        "datei_bild_2": {
+          "identifier": "datei_bild_2",
+          "label": "Datei 2",
+          "type": "file",
+          "subtype": null,
+          "fulltype": "file"
+        }
+      }
+    },
+    "bpro___templates": {
+      "app_id": "66d585476915c5bd09295b50",
+      "name": "BPro - Templates",
+      "controls": {
+        "dummy": {
+          "identifier": "dummy",
+          "label": "Dummy",
+          "type": "string",
+          "subtype": "text",
+          "fulltype": "string/text"
+        }
+      }
+    }
+  },
+  "metadata": {
+    "apps_list": [
+      "BPro - Beteiligte",
+      "BPro - Aufgaben",
+      "BPro - Mitarbeiter",
+      "BPro - Beschlussprotokoll",
+      "BPro - Howto",
+      "BPro - Berichte",
+      "BPro - Templates"
+    ]
+  }
+}
